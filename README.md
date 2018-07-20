@@ -2,9 +2,9 @@
 Based on a great talk by Ryan Hipple, here is my improved version of his Game Event system for Unity
 
 
+Quick Note:
 This project doesn't use any namespaces. 
 Conflicts with your own code my happen if you have any classes named the same.
-
 There is 3 classes:
 GameEvent
 EventLister
