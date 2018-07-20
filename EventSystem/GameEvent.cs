@@ -8,7 +8,7 @@ public class GameEvent : ScriptableObject
 
     private List<EventListener> eventListeners = new List<EventListener>();
 
-    [ContextMenu("Raise")]
+    //[ContextMenu("Raise")]
     public void Raise()
     {
         for (int i = eventListeners.Count - 1; i >= 0; i--)
