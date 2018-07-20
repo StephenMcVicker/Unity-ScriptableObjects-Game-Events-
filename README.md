@@ -28,4 +28,4 @@ Listen for each game event and just add what you want to happen if either is rai
 
 
 ## Installation
-Just download the files and drag them into your Asset folder (or any subfolder of your creation) in Unity.
+Just download the files and drag the EventSystem folder into your Asset folder (or any subfolder of your creation) in Unity.
