@@ -55,3 +55,12 @@ In my example in this image below, I add an action button pressed raise an event
 ![eventlistener](https://i.imgur.com/sYrfYOY.png)
 
 If you found any of that confusing, watch MY video above or reach out to me on Twitter: https://twitter.com/stephenmcvicker
+
+## Remember
+The goal is to keep everything modular/data driven and designer friendly. 
+You will need to create some helper scripts at some points.
+This is designed so you can add features or subtract them without breaking anything.
+Try keep your event listeners to parent objects of the objects you want to affect. If your gameobject is disabled it won't raise the event so use your parents! 
+On your event raised you can add a listener to display/update UI, spawn in an object or effect, play an animation or even play a sound. There is a lot you can do with this system if you just experiment and play with it.
+
+
