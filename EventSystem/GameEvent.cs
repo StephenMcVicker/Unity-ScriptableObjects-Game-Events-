@@ -6,9 +6,14 @@ using UnityEngine;
 public class GameEvent : ScriptableObject
 {
 
+    public string sentString;
+    public int sentInt;
+    public float sentFloat;
+    public bool sentBool;
+
     private List<EventListener> eventListeners = new List<EventListener>();
 
-    //[ContextMenu("Raise")]
+
     public void Raise()
     {
         for (int i = eventListeners.Count - 1; i >= 0; i--)
