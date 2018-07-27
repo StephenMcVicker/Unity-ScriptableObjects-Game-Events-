@@ -49,7 +49,9 @@ eventName.Raise();
 ```
 wherever you need.
 Next, you need to add an Event Listener to the object that needs to "listen" for an event to be raised.
+
 [!eventRaised](https://i.imgur.com/GyaLgKh.png)
+
 Add an element to the list (it will default to 0). 
 Set the Game Event to listen for by dragging the game event into the slot or clicking on the Game Event variable and finding it in your project.
 You can listen out for different types of events. You can pass in strings, ints, floats, and bools by setting them in the game event or by setting them before calling the "eventName.Raise".
@@ -66,17 +68,23 @@ Check out the sample.
 
 Download Game Event System Demo to see this in action.
 Our example game development scenario includes a player inside a game world, some UI, and a game object for keeping keyboard input separate.  
+
 ![sample](https://i.imgur.com/ludHm1p.png)
+
 Yeah, it's basic. 
 Here is what the scene looks like:
+
 ![scene](https://i.imgur.com/xDCTJNJ.png)
+
 I kept Input as it's own object to show how modular this system really is.
 You don't NEED to have the player on screen to send events the keys were pressed for raising the moving events.
 You can use WASD to move. You can even hide and show the player using the buttons on screen.
 
 You will notice the HP bar does nothing. This is intentional.
 If you go into the "Game Events" folder you will see 2 events for Damage and Heal.
+
 ![damage](https://i.imgur.com/WyEqd3l.png)
+
 Using the custom inspector we can raise the event right from viewing the actual event asset. This is great for debugging and quicking checking if an event is firing.
 You will also notice the sent int is 1. This is the damage to the HP.
 The HP bar has a simple script for filling the bar by having a current value and max value and converting that to a value the fill image can understand.
